@@ -1,5 +1,5 @@
 /* Reset some basic elements for consistency */
-body, h1, p {
+body, h1, h2, h3, p, ul, li, form, label, input, textarea, button {
     margin: 0;
     padding: 0;
 }
@@ -10,10 +10,35 @@ body {
     background-color: #f0f0f0;
     color: #333;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
     margin: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #007BFF;
+    color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /* Center content with Flexbox */
@@ -23,25 +48,63 @@ body {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    text-align: center;
+    margin: 20px;
 }
 
-/* Header styles */
-h1 {
+/* Section styles */
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
     color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.project {
     margin-bottom: 20px;
 }
 
-/* Paragraph styles */
-p {
-    line-height: 1.6;
-    margin-bottom: 20px;
+.project h3 {
+    margin-bottom: 5px;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
 
 /* Add a footer */
 footer {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: 0.9em;
     color: #777;
 }
