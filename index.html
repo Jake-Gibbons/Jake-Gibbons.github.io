@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Jake Gibbons' Site</title>
-    <!-- Link to Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Link to CSS Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,48 +12,36 @@
         <h1>Jake-Gibbons.github.io</h1>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! I'm Jake Gibbons, a web developer with a passion for creating interactive and user-friendly websites.</p>
+        <section id="welcome">
+            <h2>Welcome to My Website</h2>
+            <p>I'm Jake Gibbons, a web developer with a passion for creating interactive and user-friendly websites. Explore my projects, read my blog, and feel free to get in touch!</p>
         </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="projects">
-                <div class="project-card">
-                    <h3>Project One</h3>
-                    <p>This is a description of my first project. It involves using HTML, CSS, and JavaScript to create a dynamic web application.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Project Two</h3>
-                    <p>This is a description of my second project. It focuses on using backend technologies to build a robust and scalable web application.</p>
-                </div>
+        <section id="highlights">
+            <h2>Highlights</h2>
+            <div class="highlight-card">
+                <h3>Featured Project</h3>
+                <p>Check out my latest project, a dynamic web application built with modern web technologies.</p>
+                <a href="projects.html">Learn More</a>
             </div>
-        </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-            <div id="form-result"></div>
+            <div class="highlight-card">
+                <h3>Recent Blog Post</h3>
+                <p>Read my thoughts on the latest trends in web development and technology.</p>
+                <a href="blog.html">Read More</a>
+            </div>
         </section>
     </div>
     <footer>
         &copy; 2024 Jake Gibbons
     </footer>
-    <!-- Link to JavaScript File -->
     <script src="script.js"></script>
 </body>
 </html>
