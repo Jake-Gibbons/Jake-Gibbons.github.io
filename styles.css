@@ -33,6 +33,7 @@ nav ul li a {
 
 .container {
     padding: 2rem;
+    padding-bottom: 4rem; /* Ensure space for the footer */
 }
 
 h2 {
